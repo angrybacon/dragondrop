@@ -4,6 +4,7 @@
 This repository contains a small React playground.
 
 - =bootstrap-material-design=: https://fezvrasta.github.io/bootstrap-material-design/
+- =mdi=: https://materialdesignicons.com/
 
 * Installation
 

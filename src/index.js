@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 import 'bootstrap-material-design/dist/css/bootstrap-material-design.css';
+import 'mdi/css/materialdesignicons.css';
 import './index.css';
 
 class Application extends React.Component {
