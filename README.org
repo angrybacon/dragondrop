@@ -12,3 +12,14 @@ This repository contains a small React playground.
 npm install
 npm start
 #+END_SRC
+
+* Todo
+
+** Scripts
+
+- [ ] Version-control the ESLint configuration
+- [ ] Use =scripts/index.jsx= rather than =index.js=
+
+** Styles
+
+- [ ] Use =styles/index.scss= rather than =index.css=
