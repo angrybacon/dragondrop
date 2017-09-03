@@ -14,7 +14,7 @@ class List extends React.Component {
             <div>{this.props.title}</div>
             <div className="wk-pill wk-back-secondary ml-3">{candidates.length}</div>
           </div>
-          <div className="card-body">{candidates}</div>
+          <div className="card-body scroll-y">{candidates}</div>
         </div>
       </div>
     );
