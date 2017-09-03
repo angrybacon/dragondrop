@@ -1,0 +1,11 @@
+#+TITLE: Dragon' Drop
+#+AUTHOR: Mathieu Marques
+
+This repository contains a small React playground.
+
+* Installation
+
+#+BEGIN_SRC bash
+npm install
+npm start
+#+END_SRC
