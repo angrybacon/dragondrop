@@ -1,0 +1,49 @@
+$back-background:      #EEEEEE;
+$back-foreground:      #FAFAFA;
+$back-accent:          #00B37E;
+$back-primary:         #314575;
+$back-primary-active:  #222B59;
+$back-secondary:       #DEE7F1;
+
+$text-anti:            #FAFAFA;
+$text-default:         #333333;
+$text-muted:           #666666;
+
+$text-background:      $text-default;
+$text-foreground:      $text-default;
+$text-accent:          $text-anti;
+$text-primary:         $text-anti;
+$text-primary-active:  $text-anti;
+
+// Background
+// -----------------------------------------------------------------------------
+
+$back-colors: (
+  accent:          (back: $back-accent,         text: $text-accent),
+  background:      (back: $back-background,     text: $text-background),
+  foreground:      (back: $back-foreground,     text: $text-foreground),
+  primary:         (back: $back-primary,        text: $text-primary),
+  primary-active:  (back: $back-primary-active, text: $text-primary-active),
+  secondary     :  (back: $back-secondary,      text: $text-foreground)
+);
+
+@each $name, $palette in $back-colors {
+  .wk-back-#{$name} {
+    background-color: map-get($palette, back);
+    color: map-get($palette, text);
+  }
+}
+
+// Text
+// -----------------------------------------------------------------------------
+
+$text-colors: (
+  accent:  $text-accent,
+  muted:   $text-muted
+);
+
+@each $name, $color in $text-colors {
+  .wk-text-#{$name} {
+    color: $color;
+  }
+}
