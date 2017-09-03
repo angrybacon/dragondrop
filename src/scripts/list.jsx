@@ -10,7 +10,10 @@ class List extends React.Component {
     return (
       <div className="h-100 col-6">
         <div className="card wk-back-foreground h-100">
-          <div className="card-header d-flex align-items-center"></div>
+          <div className="card-header d-flex align-items-center">
+            <div>{this.props.title}</div>
+            <div className="wk-pill wk-back-secondary ml-3">{candidates.length}</div>
+          </div>
           <div className="card-body">{candidates}</div>
         </div>
       </div>
