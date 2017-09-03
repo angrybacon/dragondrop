@@ -3,9 +3,46 @@ import React from 'react';
 class Candidate extends React.Component {
   render() {
     return (
-      <div className="card mb-3">
-        <div className="card-body"></div>
-        <div className="card-footer"></div>
+      <div className="card candidate mb-3" onClick={this.props.moveFn}>
+
+        <div className="card-body d-flex align-items-center">
+          <img className="candidate-avatar rounded-circle" src={this.props.data.avatar} alt="" />
+          <div className="d-flex flex-column mx-3">
+            <h5>{this.props.data.name}</h5>
+            <div className="text-muted">{this.props.data.occupation}</div>
+          </div>
+          <button className="btn bmd-btn-icon align-self-start ml-auto text-muted">
+            {/* XXX: BMD icon class doesn't work well with sized buttons. */}
+            {/*      See https://github.com/FezVrasta/bootstrap-material-design/issues/1213 */}
+            <small className="mdi mdi-bell"></small>
+          </button>
+        </div>
+
+        <div className="card-footer d-flex align-items-center">
+          {/* NOTE: BS badge pills are not currently supported by BMD. */}
+          <div className="wk-pill wk-back-accent">{this.props.data.rating}</div>
+          <div className="w-100 d-flex align-items-center ml-3 text-muted">
+            <div>
+              <button className="btn bmd-btn-icon mr-3">
+                <small className="mdi mdi-thumb-up"></small>
+              </button>
+              0
+            </div>
+            <div className="ml-3">
+              <button className="btn bmd-btn-icon mr-3">
+                <small className="mdi mdi-message"></small>
+              </button>
+              0
+            </div>
+            <div className="ml-3">
+              <button className="btn bmd-btn-icon mr-3">
+                <small className="mdi mdi-email"></small>
+              </button>
+              0
+            </div>
+            <div className="ml-auto"><em>last year</em></div>
+          </div>
+        </div>
       </div>
     );
   }
