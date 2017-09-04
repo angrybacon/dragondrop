@@ -5,13 +5,15 @@ This repository contains a small React playground.
 
 Having approximately less than 24 hours of actual experience with React, this
 project is a naive enterprise at making a Trello-like board. Two lists, each
-container for cards, with cards being draggable with the mouse from one list to
-another.
+list being a container for cards, with said cards being draggable from one list
+to another.
 
 * Installation
 
 - =bootstrap-material-design=: https://fezvrasta.github.io/bootstrap-material-design/
 - =mdi=: https://materialdesignicons.com/
+- =react=: https://facebook.github.io/react/
+- =react-dnd=: https://react-dnd.github.io/react-dnd/
 - =sass=: http://sass-lang.com/
 
 #+BEGIN_SRC bash
@@ -30,4 +32,3 @@ npm start
 7. [ ] Use =styles/index.scss= rather than =index.css=
 8. [ ] Add drag and drop feature on lists
 9. [ ] Add horizontal scrolling
-
