@@ -26,6 +26,7 @@ npm start
 1. [X] Add drag and drop feature on cards
 1. [ ] Implement vertical sorting
 1. [ ] Websocketify
+1. [ ] Make a mobile layout
 1. [ ] Version-control the ESLint configuration
 1. [ ] Add a preview at drop target
 1. [ ] Use =scripts/index.jsx= rather than =index.js=
