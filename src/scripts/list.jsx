@@ -3,6 +3,7 @@ import React from 'react';
 import {DragDropContext, DropTarget} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
+import Data from './data';
 import Candidate from './candidate';
 import Types from './types';
 
@@ -10,7 +11,9 @@ class List extends React.Component {
   render() {
     const {x, connectDropTarget} = this.props;
     const candidates = this.props.candidates
-          ? this.props.candidates.map((c) => <Candidate key={c.id} data={c} />)
+          ? this.props.candidates.map(
+            (c, i) => <Candidate key={c.id} x={x} y={i} data={c} />
+          )
           : [];
     return connectDropTarget(
       <div className="h-100 col-6">
