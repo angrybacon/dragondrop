@@ -34,6 +34,6 @@ npm start
 1. [ ] Add drag and drop feature on lists
 1. [ ] Add horizontal scrolling
 
-* Screenshots
+* Screencasts
 
-[[./dragondrop.png]]
+[[./dragondrop.gif]]
