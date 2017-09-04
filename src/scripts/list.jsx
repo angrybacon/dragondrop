@@ -7,6 +7,11 @@ import Data from './data';
 import Candidate from './candidate';
 import Types from './types';
 
+function move(candidate, newX) {
+  Data[candidate.x].candidates.splice(candidate.y, 1);
+  Data[newX].candidates.push(candidate.data);
+}
+
 class List extends React.Component {
   render() {
     const {x, connectDropTarget} = this.props;
@@ -31,6 +36,7 @@ class List extends React.Component {
 
 const dragTarget = {
   drop(props, monitor) {
+    move(monitor.getItem(), props.x);
   }
 };
 
