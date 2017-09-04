@@ -15,11 +15,13 @@ npm start
 
 * Todo
 
-** Scripts
+1. [ ] Add drag and drop feature on cards
+2. [ ] Implement vertical sorting
+3. [ ] Websocketify
+4. [ ] Version-control the ESLint configuration
+5. [ ] Add a preview at drop target
+6. [ ] Use =scripts/index.jsx= rather than =index.js=
+7. [ ] Use =styles/index.scss= rather than =index.css=
+8. [ ] Add drag and drop feature on lists
+9. [ ] Add horizontal scrolling
 
-- [ ] Version-control the ESLint configuration
-- [ ] Use =scripts/index.jsx= rather than =index.js=
-
-** Styles
-
-- [ ] Use =styles/index.scss= rather than =index.css=

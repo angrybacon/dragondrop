@@ -3,10 +3,11 @@ import React from 'react';
 class Candidate extends React.Component {
   render() {
     return (
-      <div className="card candidate mb-3" onClick={this.props.moveFn}>
+      <div className="card candidate mb-3">
 
         <div className="card-body d-flex align-items-center">
-          <img className="candidate-avatar rounded-circle" src={this.props.data.avatar} alt="" />
+          <img className="candidate-avatar rounded-circle"
+               src={this.props.data.avatar} alt="Avatar of {this.props.data.name}" />
           <div className="d-flex flex-column mx-3">
             <h5>{this.props.data.name}</h5>
             <div className="text-muted">{this.props.data.occupation}</div>

@@ -5,7 +5,7 @@ import Candidate from './candidate';
 class List extends React.Component {
   render() {
     const candidates = this.props.candidates
-          ? this.props.candidates.map((c) => <Candidate key={c.id} data={c} moveFn={this.move} />)
+          ? this.props.candidates.map((c) => <Candidate key={c.id} data={c} />)
           : [];
     return (
       <div className="h-100 col-6">
