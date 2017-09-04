@@ -15,7 +15,7 @@ npm start
 
 * Todo
 
-1. [ ] Add drag and drop feature on cards
+1. [X] Add drag and drop feature on cards
 2. [ ] Implement vertical sorting
 3. [ ] Websocketify
 4. [ ] Version-control the ESLint configuration

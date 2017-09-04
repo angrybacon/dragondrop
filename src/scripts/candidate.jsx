@@ -1,9 +1,14 @@
+import {DragSource} from 'react-dnd';
 import React from 'react';
+
+import Types from './types';
 
 class Candidate extends React.Component {
   render() {
-    return (
-      <div className="card candidate mb-3">
+    const {connectDragSource, isDragging} = this.props;
+    return connectDragSource(
+      <div className="card candidate mb-3"
+           style={{opacity: isDragging ? .8 : 1, cursor: 'move'}}>
 
         <div className="card-body d-flex align-items-center">
           <img className="candidate-avatar rounded-circle"
@@ -49,4 +54,17 @@ class Candidate extends React.Component {
   }
 }
 
-export default Candidate;
+const dragSource = {
+  beginDrag(props) {
+    return props;
+  }
+};
+
+function collect(connect, monitor) {
+  return {
+    connectDragSource: connect.dragSource(),
+    isDragging: monitor.isDragging()
+  };
+}
+
+export default DragSource(Types.CANDIDATE, dragSource, collect)(Candidate);
