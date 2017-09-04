@@ -3,10 +3,16 @@
 
 This repository contains a small React playground.
 
-- =bootstrap-material-design=: https://fezvrasta.github.io/bootstrap-material-design/
-- =mdi=: https://materialdesignicons.com/
+Having approximately less than 24 hours of actual experience with React, this
+project is a naive enterprise at making a Trello-like board. Two lists, each
+container for cards, with cards being draggable with the mouse from one list to
+another.
 
 * Installation
+
+- =bootstrap-material-design=: https://fezvrasta.github.io/bootstrap-material-design/
+- =mdi=: https://materialdesignicons.com/
+- =sass=: http://sass-lang.com/
 
 #+BEGIN_SRC bash
 npm install
