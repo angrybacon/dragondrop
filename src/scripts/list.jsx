@@ -3,6 +3,7 @@ import React from 'react';
 import {DragDropContext, DropTarget} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
+import {redraw} from './board';
 import Data from './data';
 import Candidate from './candidate';
 import Types from './types';
@@ -10,6 +11,7 @@ import Types from './types';
 function move(candidate, newX) {
   Data[candidate.x].candidates.splice(candidate.y, 1);
   Data[newX].candidates.push(candidate.data);
+  redraw();
 }
 
 class List extends React.Component {
